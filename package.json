@@ -1,12 +1,33 @@
 {
   "name": "android",
   "version": "1.0.0",
-  "description": "",
+  "description": "android app demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "曹斌鑫",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caobinxin/android-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caobinxin/android-app/issues"
+  },
+  "homepage": "https://github.com/caobinxin/android-app#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-angular": "^7.6.0",
+    "husky": "^2.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "dependencies": {
+    "lint": "^1.1.2"
+  }
 }
