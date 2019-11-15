@@ -3,7 +3,19 @@
 buildscript {
     repositories {
         google()
+        // jcenter()
+//        jcenter() {
+//            url "http://jcenter.bintray.com/"
+//        }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        mavenCentral()
+
+        jcenter() { url "http://jcenter.bintray.com/" }
+
+        maven { url "https://jitpack.io" }
         jcenter()
+        google()
         
     }
     dependencies {
@@ -17,7 +29,20 @@ buildscript {
 allprojects {
     repositories {
         google()
+        // jcenter()
+//        jcenter() {
+//            url "http://jcenter.bintray.com/"
+//        }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        mavenCentral()
+
+        jcenter() { url "http://jcenter.bintray.com/" }
+
+
+        maven { url "https://jitpack.io" }
         jcenter()
+        google()
         
     }
 }
