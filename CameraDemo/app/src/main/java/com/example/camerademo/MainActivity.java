@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btn_take.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                camera.cancelAutoFocus();
                 camera.takePicture(null, null, new Camera.PictureCallback() {
                     @Override
                     public void onPictureTaken(byte[] data, Camera camera) {
